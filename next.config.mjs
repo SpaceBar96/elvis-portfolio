@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
-//  https://github.com/SpaceBar96/elvis-portfolio
 const nextConfig = {
   webpack(config) {
     // Grab the existing rule that handles SVG imports
@@ -45,14 +43,6 @@ const nextConfig = {
 
     return config;
   },
-
-  reactStrictMode: true,
-  images: {
-    unoptimized: true, // Disable default image optimization
-  },
-  assetPrefix: isProd ? "/elvis-portfolio" : "",
-  basePath: isProd ? "/elvis-portfolio" : "",
-  output: "export",
 };
 
 export default nextConfig;
