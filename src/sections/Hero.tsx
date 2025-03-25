@@ -131,7 +131,7 @@ export const HeroSection = () => {
           </div>
           <div className="flex flex-row gap-2">
             <a
-              href="/resume.pdf"
+              href="./resume.pdf"
               download="Elvis_Remond_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -146,7 +146,7 @@ export const HeroSection = () => {
               />
             </a>
             <a
-              href="/resume.pdf"
+              href="./resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white/20 border border-white/15 text-white-300 px-5 h-12 rounded-xl"
